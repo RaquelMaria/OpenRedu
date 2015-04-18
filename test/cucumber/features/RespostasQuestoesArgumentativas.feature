@@ -9,7 +9,7 @@ Feature: Respostas das Questões Argumentativas
 		When eu vejo a lista de questões respondidas
 		Then a lista de questões respondidas contém a questão "Faça um cenário"
 
-	Scenario: listar questões respondidas	
+	Scenario: listar questões respondidas web
 		Given que o “aluno” esteja logado
 		And o sistema contenha a questão respondida “Como criar seu GitHub”
 		And esteja no menu de questões dissertativas 
