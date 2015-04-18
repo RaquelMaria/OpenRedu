@@ -16,24 +16,6 @@ Then(/'^ a lista de questões respondidas contém a questão "([^"]*)"$/) do |ti
  	assert_not_nil question.find_by_title(title)
 end
 
-#auxiliary classes
-
-class listQuestion
-
-	def questionResponse (title)
-		@user = Questions.find_by_name(name)
-		
-	#def cont = new QuestionsController() 
-		#cont.params << Questions.find_by_title(title)
-		#cont.request.setContent (new byte [1000])
-		#cont.create() #acho que é porque cria um artigo
-		#cont.save() #acho que é para salvar o artigo
-		#cont.response.reset()
-	end
-end
-
-
-
 #GUI
 Given(/'^ que o "aluno" esteja logado$/) do 
 	to LoginPage
